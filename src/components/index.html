@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form action=""></form>
 </body>
 </html>
