@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500;1,700&display=swap');
+
+main {
+  background-color: black;
+  margin-bottom:2rem;
+  padding:0;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  margin-top: 2em;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.pelis {
+  margin-top:5rem;
+background-size: auto auto;
+  height:400px;
+  color:white;
+}
+.pelis_encabezado {
+  
+  width:60rem;
+  margin-right:auto;
+  margin-left:auto;
+  margin-top: 2em;
+  padding: 3em 0;
+  text-align: center;
+}
+.input-group{
+  width:70%;
+  margin-right:auto;
+  margin-left:auto;
+  margin-bottom: 2em; 
+}
+.form-control{
+  min-width: 15rem;
+  margin-right: .5em;
+  padding: .5rem 1rem;
+  background-color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: small;
+  font-style: italic;
+  }
+.btn{
+  background: #7c1fd3;
+  background: linear-gradient(to left, #9a50df, #7c1fd3, #410877);
+  color: #020202;
+  border-color: #000000;
+  border-width: 0.15rem;
+  font-size: 1.2rem;
+  padding: .5rem 1rem;
+  
+  }
+
+  .btn:hover{
+    background:inherit;
+    color: #ffffff;
+    border-color: #7c1fd3;
+}
+
+main section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1em 0;
+  width: 100%;
+  
+}
+main section div {
+  width: 50%;
+}
+.seccion{
+  color: white;
+  text-align: center; 
+  margin: auto;
+  width: fit-content;
+}
+.foto{
+  width:80%;
+
+}
