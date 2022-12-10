@@ -1,0 +1,12 @@
+:root {
+    --main-color: #0b0b0b;
+    --barra:#0202025b;
+    --gradienteizq:#7c1fd3;
+    --gradientecentro:#7c1fd3;
+    --gradienteder:, #410877;
+    --fondo:rgba(0,0,0,0.90)
+}
+
+body{
+    background-color: var(--fondo);
+}

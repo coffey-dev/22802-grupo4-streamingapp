@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500;1,700&display=swap');
 
 main {
-  background-color: black;
   margin-bottom:2rem;
   padding:0;
   width:100%;
@@ -48,17 +47,21 @@ background-size: auto auto;
   background: linear-gradient(to left, #9a50df, #7c1fd3, #410877);
   color: #020202;
   border-color: #000000;
-  border-width: 0.15rem;
+  border-width: 0.1rem;
+  border-radius: .3em;
   font-size: 1.2rem;
-  padding: .5rem 1rem;
-  
+  padding: .4rem 1rem; 
+  transition: all .5s;
+  margin-right: 1em;
   }
 
   .btn:hover{
     background:inherit;
     color: #ffffff;
     border-color: #7c1fd3;
+
 }
+
 
 main section{
   display: flex;
