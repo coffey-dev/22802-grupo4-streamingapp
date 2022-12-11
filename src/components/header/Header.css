@@ -1,5 +1,6 @@
 :root{
-    --barra:#020202f6;
+    --barrat:#020202;
+    --barra:#0202029b;
     --gradienteizq:#7c1fd3;
     --gradientecentro:#7c1fd3;
     --gradienteder:, #410877;
@@ -13,12 +14,12 @@
   left: 0;
   top: 0;
   z-index: 999;
-  background: linear-gradient(to top, transparent 0%, rgb(0,0,0,0.3) 50%);
+  background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.747) 50%);
   transition: all .2s;
 }
 
 .navbar.scrolled {
-      background: var(--barra);
+      background: linear-gradient(to top, var(--barrat), var(--barra));
   }
   .logo{
     width: auto;
@@ -41,8 +42,7 @@
               height: 25px;
               margin-right: 40px;
               }
-
-      
+   
   
 .der{
           display: flex;

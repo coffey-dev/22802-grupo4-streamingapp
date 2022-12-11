@@ -19,13 +19,13 @@ background-size: auto auto;
   color:white;
 }
 .pelis_encabezado {
-  
   width:60rem;
   margin-right:auto;
   margin-left:auto;
   margin-top: 2em;
   padding: 3em 0;
   text-align: center;
+  
 }
 .input-group{
   width:70%;
@@ -42,25 +42,7 @@ background-size: auto auto;
   font-size: small;
   font-style: italic;
   }
-.btn{
-  background: #7c1fd3;
-  background: linear-gradient(to left, #9a50df, #7c1fd3, #410877);
-  color: #020202;
-  border-color: #000000;
-  border-width: 0.1rem;
-  border-radius: .3em;
-  font-size: 1.2rem;
-  padding: .4rem 1rem; 
-  transition: all .5s;
-  margin-right: 1em;
-  }
 
-  .btn:hover{
-    background:inherit;
-    color: #ffffff;
-    border-color: #7c1fd3;
-
-}
 
 
 main section{
