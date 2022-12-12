@@ -8,14 +8,14 @@ import Header from "../src/components/header/Header";
 import Footer from "./components/footer/Footer";
 
 const App = () => {
-  // return(
-  //   <div>
-  //     <Header/>
-  //     <Home />
-  //     <Footer />
-  //   </div>
-  // )
-  return <Home />;
+  return(
+    <div>
+      <Header/>
+      <Register />
+      <Footer />
+    </div>
+  )
+  // return <Home />;
 };
 
 export default App;
