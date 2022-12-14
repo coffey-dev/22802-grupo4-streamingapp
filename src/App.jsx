@@ -1,21 +1,19 @@
 import "./app.css";
 import Home from "../src/pages/home/Home";
 import Watch from "../src/pages/watch/Watch";
-import Register from "../src/pages/register/Register";
-import Login from "../src/pages/login/Login";
-import Landing from "../src/pages/landing/Landing";
-import Header from "../src/components/header/Header";
-import Footer from "./components/footer/Footer";
+import Registro from "./pages/Registro/Registro";
+import Login from "./pages/login/Login";
+import Landing from "./pages/landing/Landing";
+
+
 
 const App = () => {
   return(
     <div>
-      <Header/>
-      <Register />
-      <Footer />
+     <Landing />
     </div>
   )
-  // return <Home />;
+  ;
 };
 
 export default App;

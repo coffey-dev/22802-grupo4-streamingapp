@@ -3,6 +3,9 @@ import Navbar from "../../components/navbar/Navbar";
 import Featured from '../../components/featured/Featured';
 import List from '../../components/List/List';
 import "./home.scss";
+import Header from '../../components/header/Header';
+import Footer from '../../components/footer/Footer';
+
 
 
 
@@ -16,6 +19,7 @@ const Home = () => {
        <List />
        <List />
        <List />
+       <Footer />
        
 
         </div>

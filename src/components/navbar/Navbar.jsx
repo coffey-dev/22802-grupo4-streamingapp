@@ -4,6 +4,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useState } from "react";
+import logo from "../../images/header/logo.png";
 
 const Navbar = () => {
 
@@ -23,10 +24,10 @@ window.onscroll = () =>{
   return (
     <div className={isScrolled ? "navbar scrolled" : "navbar" }>
       
-      <div className='container'>
+      <div className='containernavbar'>
         
         <div className='left'>
-          <img src="https://1000marcas.net/wp-content/uploads/2020/01/Logo-Netflix-1536x864.png" alt="" />
+          <img src={logo} alt="" />
           <span>Homepage</span>
           <span>Series</span>
           <span>Movies</span>

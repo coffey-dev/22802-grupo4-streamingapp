@@ -53,7 +53,7 @@ onClick={()=>handleClick("left")}
 style={{display: !isMoved && "none"} }
 />
 
-<div className='container' ref={listRef}>
+<div className='containerlist' ref={listRef}>
     <ListItem index={0}  />
     <ListItem index={1}  />
     <ListItem index={2}  />
