@@ -112,7 +112,7 @@ export default function Register() {
               className="btn btnVolver">Volver</button>
           </div>
           <div className="d-grid">
-            <button type="submit" className="btn btnRegistrarse fw-bold" onClick={handleFormSubmit}>Registrarse</button>
+            <button type="submit" className="btn btnRegistrarse fw-bold" >Registrarse</button>
           </div>
         </form>
       </div>
