@@ -1,0 +1,72 @@
+// Imports de Sebas
+import React, { useRef } from 'react';
+// import "./register.scss";
+import { useState } from "react";
+
+//Son los imports del register (Nico)
+// import React from "react";
+import './register.css';
+
+export default function Register() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const emailRef = useRef();
+  const passwordRef = useRef();
+
+  const handleStart = () => {
+    setEmail(emailRef.current.value);
+  };
+  const handleFinish = () => {
+    setPassword(passwordRef.current.value);
+  };
+  return (
+
+    <div className="container w-25">
+      <div className="row text-white">
+        <div className="col"></div>
+        <h2 className="mb-4">Crea tu cuenta</h2>
+        <form className="mt-2">
+          <div className="mb-4">
+            <label for="name" className="form-label"><i className="fa-solid fa-user"></i> Nombre</label>
+            <input
+              placeholder="Madison"
+              className="form-control"
+            ></input>
+          </div>
+          <div className="mb-4">
+            <label for="name" className="form-label"><i className="fa-solid fa-user"></i> Apellido</label>
+            <input
+              placeholder="Jackson"
+              className="form-control"
+            ></input>
+          </div>
+          <div className="mb-4">
+            <label for="email" className="form-label"><i className="fa-solid fa-envelope"></i> Correo electrónico</label>
+            <input
+              placeholder="correo@ejemplo.com"
+              className="form-control"
+            ></input>
+          </div>
+          <div className="mb-4">
+            <label for="password" className="form-label"><i className="fa-solid fa-lock"></i> Contraseña</label>
+            <input
+              placeholder="••••••••••••••"
+              className="form-control"
+            ></input>
+          </div>
+          <div className="mb-4">
+            <button
+              type="menu"
+              className="btn btnVolver">Volver</button>
+          </div>
+          <div className="d-grid">
+            <button type="submit" className="btn btnRegistrarse fw-bold">Registrarse</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  )
+}
+
+// export default Register

@@ -1,0 +1,105 @@
+body{
+  background-color: rgba(0, 0, 0, 0.90);  
+}
+
+#logo{
+  width: auto;
+  height: 34px;
+  padding-right: 45px;
+}
+
+/* Formulario */
+
+.container{
+  padding: 4rem 3rem;
+  border-radius: 0.5rem;
+  margin-top: 11rem;
+  margin-bottom: 13rem;
+  min-width:fit-content;
+  background-color: #0202025b;
+}
+
+.form-control{
+min-width: 15rem;
+}
+
+.btnVolver{
+  color: #ffffff;
+  border-color: #ffffff;
+  font-size: 1.2rem;
+  padding: .4rem 1rem;
+  border-width: 0.1rem;
+  background-color: inherit;
+}
+
+.btnVolver:hover{
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #000000;
+}
+
+.btnRegistrarse{
+  background: #7c1fd3;
+  background: linear-gradient(to left, #9a50df, #7c1fd3, #410877);
+  color: #020202;
+  border-color: #000000;
+  border-width: 0.15rem;
+  font-size: 1.2rem;
+  padding: .5rem 1rem;
+  }
+
+.btnRegistrarse:hover{
+  background:inherit;
+  color: #ffffff;
+  border-color: #7c1fd3;
+}
+
+.btnIngresar{
+  background: #7c1fd3;
+  background: linear-gradient(to left, #9a50df, #7c1fd3, #410877);
+  color: #020202;
+  border-color: #000000;
+  border-width: 0.1rem;
+  font-size: 1.2rem;
+  padding: .4rem 1rem; 
+}
+
+.btnIngresar:hover{
+  background:inherit;
+  color: #ffffff;
+  border-color: #7c1fd3;
+}
+
+.btnRecuperarContraseña{
+  color: #ffffff;
+  border-color: #ffffff;
+  font-size: 1.2rem;
+  padding: .4rem 1rem;
+  border-width: 0.1rem;
+  background-color: inherit;
+}
+
+.btnRecuperarContraseña:hover{
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #000000;
+}
+
+.btnIniciarSesion{
+  background: #7c1fd3;
+  background: linear-gradient(to left, #9a50df, #7c1fd3, #410877);
+  color: #020202;
+  border-color: #000000;
+  border-width: 0.15rem;
+  font-size: 1.2rem;
+  padding: .5rem 1rem;
+  }
+
+.btnIniciarSesion:hover{
+  background:inherit;
+  color: #ffffff;
+  border-color: #7c1fd3;
+}
+
+
+

@@ -1,0 +1,53 @@
+:root{
+    --barrat:#020202;
+    --barra:#0202029b;
+    --gradienteizq:#7c1fd3;
+    --gradientecentro:#7c1fd3;
+    --gradienteder:, #410877;
+}
+
+.navbar {
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.747) 50%);
+  transition: all .2s;
+}
+
+.navbar.scrolled {
+      background: linear-gradient(to top, var(--barrat), var(--barra));
+  }
+  .logo{
+    width: auto;
+    height: 3em;
+    padding-right: 45px;
+  }
+  .encabezado{
+      padding: 0px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+  }   
+.Izq{
+
+          display: flex;
+          align-items: center;
+      }
+ .Izq.img{
+              height: 25px;
+              margin-right: 40px;
+              }
+   
+  
+.der{
+          display: flex;
+          align-items: center;
+      }
+
+
+       
