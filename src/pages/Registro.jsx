@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from "../components/header/Header";
+import Header from "../components/Header";
 import Register from "../components/register/Register";
 import Footer from "../components/footer/Footer";
 

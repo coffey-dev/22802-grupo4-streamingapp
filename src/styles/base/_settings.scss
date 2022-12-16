@@ -1,3 +1,5 @@
+// Letra Roboto para aplicar en general
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500;1,700&display=swap');
 $main-color: #0b0b0b;
 $barra:#0202025b;
 $gradienteizq:#7c1fd3;
@@ -5,7 +7,7 @@ $gradientecentro:#7c1fd3;
 $gradienteder: #410877;
 $fondo:rgba(0,0,0,0.90);
 $enlaces:#555555;
-
+$fuentes:'Roboto', sans-serif;
 /*
     body{
         background-color: var(--fondo);

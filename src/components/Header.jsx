@@ -1,6 +1,5 @@
 import React from "react";
-import './Header.css';
-import logo from "../../images/header/logo.png";
+import logo from "../images/header/logo.png";
 import { useState } from "react";
 
 
@@ -16,11 +15,11 @@ window.onscroll = () =>{
   return (
 
     <header className={isScrolled ? "navbar scrolled" : "navbar" }>
-      <div className="encabezado">
-        <h3 className="izq"><img src={logo} alt="Logo" className="logo" /></h3>
-        <nav className="der">
-        <a className="nav-link" href="#" aria-current="page"><button className="btn">Idioma</button></a>
-        <a className="nav-link" href="#"> <button className="btn">Ingresar</button></a>
+      <div className="encabezado_container">
+        <h3 className="encabezado_izq"><img src={logo} alt="Logo" className="encabezado_logo" /></h3>
+        <nav className="encabezado_der">
+        <button className="encabezado_btn">Registrate</button>
+         <button className="encabezado_btn">Ingresar</button>
         </nav>
       </div>
     </header>
