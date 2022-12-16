@@ -1,8 +1,7 @@
 import React, { useRef } from 'react';
-import "./List.scss";
 import ArrowBackIosOutlinedIcon from '@mui/icons-material/ArrowBackIosOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
-import ListItem from '../listitem/ListItem';
+import ListItem from './ListItem';
 import { useState } from "react";
 
 export default function List() {
@@ -42,7 +41,7 @@ if(direction === "right" && slideNumber < 5){
 
 
   return (
-    <div className='list'>
+    <div className='list_list'>
         <span className='listTitle'>Continue to watch</span>
         <div className='wrapper'>
 <ArrowBackIosOutlinedIcon 

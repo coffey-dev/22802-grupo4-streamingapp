@@ -1,5 +1,4 @@
 import React from 'react';
-import "./Featured.scss";
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
@@ -38,7 +37,7 @@ export default function Featured({type}) {
         <span className='desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid saepe aliquam est ipsa voluptatum sapiente, modi cumque laudantium? Recusandae est velit, corporis nobis repellat labore odit dignissimos minima. Totam, rem?
         </span>
 
-        <div className='buttons'>
+        <div className='button'>
         <button className="play">
             <PlayArrowIcon />
             <span className="Play">Play</span>

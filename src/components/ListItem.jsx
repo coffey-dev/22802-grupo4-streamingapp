@@ -1,4 +1,3 @@
-import "./listItem.scss";
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import AddIcon from '@mui/icons-material/Add';
 import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
@@ -52,6 +51,9 @@ export default function ListItem({ index }) {
     </div>
   );
 }
+
+
+
 {/*
 <ReactPlayer
           className='react-player'

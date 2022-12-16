@@ -1,5 +1,5 @@
 import React from 'react';
-import Log from '../../components/log/Log';
+import Log from '../components/log/Log';
 
 
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import "./watch.scss";
 import ArrowBackOutlinedIcon from '@mui/icons-material/ArrowBackOutlined';
 
 export default function Watch() {
