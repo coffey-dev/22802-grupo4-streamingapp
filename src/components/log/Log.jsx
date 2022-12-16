@@ -11,8 +11,9 @@ function Log() {
           <div className="mb-4">
             <label for="email" className="form-label"><i className="fa-solid fa-envelope"></i> Correo electrónico</label>
             <input
-              placeholder="correo@ejemplo.com"
+              placeholder="nombre@ejemplo.com"
               className="form-control"
+              type="email"
             ></input>
           </div>
           <div className="mb-4">
@@ -20,6 +21,7 @@ function Log() {
             <input
               placeholder="••••••••••••••"
               className="form-control"
+              type="password"
             ></input>
           </div>
           <div className="d-grid mb-4">

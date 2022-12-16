@@ -55,7 +55,7 @@ export default function Register() {
         <h2 className="mb-4">Crea tu cuenta</h2>
         <form className="mt-2">
           <div className="mb-4">
-            <label for="name" className="form-label"><i className="fa-solid fa-user"></i> Nombre</label>
+            <label htmlFor="name" className="form-label"><i className="fa-solid fa-user"></i> Nombre</label>
             <input
               placeholder="Madison"
               className="form-control"
@@ -64,11 +64,11 @@ export default function Register() {
               value={values.nombre}
               onChange={handleChange}
             ></input>
-            //Mensaje de Error(Emi)
+            {/* Mensaje de Error(Emi) */}
              {errors.nombre && <p className="error">{errors.nombre}</p>}
           </div>
           <div className="mb-4">
-            <label for="name" className="form-label"><i className="fa-solid fa-user"></i> Apellido</label>
+            <label htmlFor="name" className="form-label"><i className="fa-solid fa-user"></i> Apellido</label>
             <input
               placeholder="Jackson"
               className="form-control"
@@ -77,33 +77,35 @@ export default function Register() {
               value={values.apellido}
               onChange={handleChange}
             ></input>
-              //Mensaje de Error(Emi)
+              {/* Mensaje de Error(Emi) */}
              {errors.apellido && <p className="error">{errors.apellido}</p>}
           </div>
           <div className="mb-4">
-            <label for="email" className="form-label"><i className="fa-solid fa-envelope"></i> Correo electrónico</label>
+            <label htmlFor="email" className="form-label"><i className="fa-solid fa-envelope"></i> Correo electrónico</label>
             <input
-              placeholder="correo@ejemplo.com"
+              placeholder="nombre@ejemplo.com"
               className="form-control"
+              type="email"
               //Agrego variables  (Emi)
               name="email"
               value={values.email}
               onChange={handleChange} 
             ></input>
-            //Mensaje de Error(Emi)
+            {/* Mensaje de Error(Emi) */}
              {errors.email && <p className="error">{errors.email}</p>}
           </div>
           <div className="mb-4">
-            <label for="password" className="form-label"><i className="fa-solid fa-lock"></i> Contraseña</label>
+            <label htmlFor="password" className="form-label"><i className="fa-solid fa-lock"></i> Contraseña</label>
             <input
               placeholder="••••••••••••••"
               className="form-control"
+              type="password"
               //Agrego variables (Emi)
               name="pass"
               value={values.pass}
               onChange={handleChange} 
             ></input>
-            //Mensaje de Error (Emi)
+            {/* Mensaje de Error (Emi) */}
             {errors.pass && <p className="error">{errors.pass}</p>}
           </div>
           <div className="mb-4">

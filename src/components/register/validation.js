@@ -13,15 +13,15 @@ const validation = (values) => {
     }
   
     if (!values.email) {
-      errors.email = "Es necesario que ingreses tu mail"
+      errors.email = "Es necesario que ingreses tu correo electrónico"
     } else if (!/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/.test(values.email)) {
-      errors.email = "El mail es inválido"
+      errors.email = "Tu correo electrónico debe ser: nombre@ejemplo.com"
     }
   
     if (!values.pass) {
       errors.pass = "La contraseña es requerida"
     } else if (values.pass.length < 8) {
-      errors.pass = "La contraseña es muy corta"
+      errors.pass = "Tu contraseña debe tener, como mínimo, 8 caracteres."
     }
   
     return errors

@@ -21,6 +21,12 @@ body{
 
 .form-control{
 min-width: 15rem;
+color: #ffffff;
+}
+
+.form-control:active{
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .btnVolver{
@@ -101,5 +107,10 @@ min-width: 15rem;
   border-color: #7c1fd3;
 }
 
+/* Mensajes de error */
 
-
+.error{
+  color: rgba(241, 27, 74, 0.849);
+  font-size: 0.8rem;
+  padding-top: 0.5rem;
+}

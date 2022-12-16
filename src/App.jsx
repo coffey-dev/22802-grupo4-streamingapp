@@ -9,7 +9,7 @@ import Landing from "./pages/Landing";
 const App = () => {
   return(
     <div>
-     <Login />
+     <Registro />
     </div>
   )
   ;
