@@ -8,7 +8,7 @@ import { useState } from "react";
 import './register.css';
 
 //Imports de validaciones
-import validation from "./Validation"
+import validation from "./validation"
 
 export default function Register() {
   //Agrego constantes de valores, y de errores. (Emi)

@@ -3,7 +3,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useState } from "react";
-import logo from "../../images/header/logo.png";
+import logo from "../images/header/logo.png";
 
 const NavbarHome = () => {
 
