@@ -2,7 +2,7 @@ import React from 'react';
 import NavbarHome from '../components/NavbarHome';
 import Featured from '../components/Featured';
 import List from '../components/List';
-import Footer from '../components/footer/Footer';
+import Footer from '../components/Footer';
 
 
 

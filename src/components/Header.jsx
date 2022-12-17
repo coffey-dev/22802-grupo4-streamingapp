@@ -16,7 +16,7 @@ window.onscroll = () =>{
 
     <header className={isScrolled ? "navbar scrolled" : "navbar" }>
       <div className="encabezado_container">
-        <h3 className="encabezado_izq"><img src={logo} alt="Logo" className="encabezado_logo" /></h3>
+        <div className="encabezado_izq"><img src={logo} alt="Logo" className="encabezado_logo" /></div>
         <nav className="encabezado_der">
         <button className="encabezado_btn">Registrate</button>
          <button className="encabezado_btn">Ingresar</button>
