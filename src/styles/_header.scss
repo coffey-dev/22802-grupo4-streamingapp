@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500;1,700&display=swap');
+$main-color: #0b0b0b;
+$barra:#0202025b;
+$barra_top:#020202;
+$gradienteizq:#c58dfa;
+$gradientecentro:#b76ffa;
+$gradienteder: #812dcf;
+$fondo:rgba(0,0,0,0.90);
+$enlaces:#555555;
+$fuentes:'Roboto', sans-serif;
+
+.navbar{
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.747) 50%);
+    transition: all .2s;
+// ver error en el cambio de estado de la barra scrolleada
+    &.scrolled{
+        background: linear-gradient(to top, var($barra_top), var($barra));
+    }
+    .encabezado_container{
+        padding: 0px 50px;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        width: 100%;
+        height: 70px;
+        .encabezado_izq{
+            display: flex;
+            align-items: center;
+            img {
+                width: auto;
+                height: 4em;
+                padding-right: 45px;
+              }
+        }
+        .encabezado_der {
+               display: flex;
+               flex-direction: row;
+                align-items: center;
+                justify-content: end;
+                .encabezado_btn{
+                    text-transform: uppercase;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 600;
+                    background: #7c1fd3;
+                    background: linear-gradient(to left,  $gradientecentro, $gradienteder);
+                    color:  black;
+                    border-color: #000000;
+                    border-width: 0.1rem;
+                    border-radius: .3em;
+                    font-size: 1em;
+                    padding: .4rem 1rem; 
+                    transition: all .5s;
+                    margin-right: 0.5em;
+                   
+                   &:hover{
+                      background:black;
+                      color: #ffffff;
+                      border-color: #7c1fd3;
+                    }
+                  }
+        }
+    }   
+
+}
