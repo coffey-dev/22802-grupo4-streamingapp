@@ -14,7 +14,7 @@ function Main() {
 
           <div className="main_inputgroup">
             <input type="text" className="main_formcontrol" placeholder="Tu email" aria-label="Tu email" aria-describedby="button-addon2" />
-            <button className="btn" type="button" id="button-addon2">Ingresar</button>
+            <button className="main_btn" type="button" id="button-addon2">Ingresar</button>
           </div>
         </div>
       </div >
