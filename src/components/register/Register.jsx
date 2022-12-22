@@ -20,8 +20,6 @@ export default function Register() {
     pass: ""
   });
 
-  const navigate = useNavigate();
-
   const [errors, setErrors] = useState({});
 
   const handleChange = (event) => {
