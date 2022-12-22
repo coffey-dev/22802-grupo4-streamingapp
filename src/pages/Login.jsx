@@ -1,4 +1,6 @@
 import React from 'react';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 import Log from '../components/Log';
 
 
@@ -6,9 +8,10 @@ import Log from '../components/Log';
 const Login = () => {
   return (
     <div className='login'>
-      
-     <Log />
-        </div>
+      <Header/>
+      <Log />
+      <Footer/>
+    </div>
   )
 }
 

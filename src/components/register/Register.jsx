@@ -1,12 +1,16 @@
 // Imports de Sebas
-import React, { useRef } from 'react';
+import React from 'react';
 import { useState } from "react";
 import validation from "./validation"
 import PersonSharpIcon from '@mui/icons-material/PersonSharp';
 import MailSharpIcon from '@mui/icons-material/MailSharp';
 import HttpsSharpIcon from '@mui/icons-material/HttpsSharp';
+import { useNavigate } from "react-router-dom";
 
 export default function Register() {
+
+  const navigate = useNavigate();
+
   //Agrego constantes de valores, y de errores. (Emi)
 
   const [values, setValues] = useState({
@@ -27,8 +31,26 @@ export default function Register() {
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    setErrors(validation(values))
+    checkEmail(values.email);  
+    setErrors(validation(values));
   };
+
+  const checkEmail = async (email) => {
+    // https://22802-grupo4-streamingapp-backend.jimmygonzalez5.repl.co/api/user/j@gmail.com
+    const response = await fetch("https://22802-grupo4-streamingapp-backend.jimmygonzalez5.repl.co/api/user/"+email)
+      .then(res => res.json())
+      .then(res => res);
+
+    console.log(response);
+
+    if (response.uiMessage){
+      console.log('Crea la cuenta');
+    }else if (response.email){
+      console.log('Existe otra cuenta con ese email');
+    }else{
+      console.log('Error de conexion');
+    }
+  }
 
   //Comento el código anterior (Emi)
   //const [email, setEmail] = useState("");
@@ -107,7 +129,7 @@ export default function Register() {
           <div className="mb-4">
             <button
               type="menu"
-              className="btn btnVolver">Volver</button>
+              className="btn btnVolver" onClick={() => navigate('/')}>Volver</button>
           </div>
           <div className="d-grid">
             <button type="submit" className="btnRegistrarse fw-bold" onClick={handleFormSubmit}>Registrarse</button>
