@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import background from "../images/main/back_lp.png";
 import fotoUno from "../images/main/foto_1.jpg";
 import fotoDos from "../images/main/foto_2.jpg";
-import { useNavigate } from "react-router-dom";
 
 function Main() {
 
