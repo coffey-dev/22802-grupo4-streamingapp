@@ -1,5 +1,7 @@
 import React from "react";
-import './Log.css';
+import "../styles/_log.scss";
+import MailSharpIcon from '@mui/icons-material/MailSharp';
+import HttpsSharpIcon from '@mui/icons-material/HttpsSharp';
 
 function Log() {
   return (
@@ -9,7 +11,7 @@ function Log() {
         <h2 className="mb-3">Inicia sesión</h2>
         <form className="mt-2">
           <div className="mb-4">
-            <label for="email" className="form-label"><i className="fa-solid fa-envelope"></i> Correo electrónico</label>
+            <label for="email" className="form-label"><div className="log-icon"><MailSharpIcon/> Correo electrónico</div></label>
             <input
               placeholder="nombre@ejemplo.com"
               className="form-control"
@@ -17,7 +19,7 @@ function Log() {
             ></input>
           </div>
           <div className="mb-4">
-            <label for="password" className="form-label"><i className="fa-solid fa-lock"></i> Contraseña</label>
+            <label for="password" className="form-label"><div className="log-icon"><HttpsSharpIcon/> Contraseña</div></label>
             <input
               placeholder="••••••••••••••"
               className="form-control"

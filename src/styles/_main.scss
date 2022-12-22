@@ -36,14 +36,16 @@
                     min-width: 15rem;
                     margin-right: .5em;
                     padding: .5rem 1rem;
-                    background-color: #000000;
+                    background-color: #000000; 
                     font-family: 'Roboto', sans-serif;
                     font-size: small;
                     font-style: italic;
                     &:active{
                         background-color: white;
-                        color: #000000;
+                        color: #000000;   
                     }
+                }
+                    
                 }
             }
         }
@@ -67,5 +69,5 @@
             width:80%;
         }
     }
-    }
+    
     

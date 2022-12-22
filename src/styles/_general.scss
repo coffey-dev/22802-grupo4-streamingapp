@@ -1,0 +1,22 @@
+.encabezado_btn, .main_btn{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    background: #7c1fd3;
+    background: linear-gradient(to left,  $gradientecentro, $gradienteder);
+    color:  black;
+    border-color: #000000;
+    border-width: 0.1rem;
+    border-radius: .3em;
+    font-size: 0.8em;
+    padding: .4rem 1rem; 
+    transition: all .5s;
+ margin-left: 2em;
+
+   
+   &:hover{
+      background:black;
+      color: #ffffff;
+      border-color: #7c1fd3;
+    }
+}

@@ -10,7 +10,7 @@ import Landing from "./pages/Landing";
 const App = () => {
   return(
     <div>
-     <Registro />
+     <Landing />
     </div>
   )
   ;
