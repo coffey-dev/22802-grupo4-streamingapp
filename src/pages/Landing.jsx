@@ -5,10 +5,9 @@ import Main from '../components/Main';
 
 const Landing = () => {
   return (
-    <div className='landing'>
-      
+    <div className='landing'>  
      <Main />
-        </div>
+    </div>
   )
 }
 

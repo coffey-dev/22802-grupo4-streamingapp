@@ -1,9 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import background from "../images/main/back_lp.png";
 import fotoUno from "../images/main/foto_1.jpg";
 import fotoDos from "../images/main/foto_2.jpg";
 
 function Main() {
+
+  const navigate = useNavigate();
+
   return (
     <div className="main_container">
       <div className="main_fondo" style={{ backgroundImage: `url(${background})` }
@@ -14,7 +19,7 @@ function Main() {
 
           <div className="main_inputgroup">
             <input type="text" className="main_formcontrol" placeholder="Tu email" aria-label="Tu email" aria-describedby="button-addon2" />
-            <button className="btn" type="button" id="button-addon2">Ingresar</button>
+            <button className="btn" type="button" id="button-addon2" onClick={()=>navigate("/register")}>Ingresar</button>
           </div>
         </div>
       </div >
