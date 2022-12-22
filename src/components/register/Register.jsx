@@ -1,7 +1,6 @@
 // Imports de Sebas
 import React, { useRef } from 'react';
 import { useState } from "react";
-import "../../styles/_register.scss";
 import validation from "./validation"
 import PersonSharpIcon from '@mui/icons-material/PersonSharp';
 import MailSharpIcon from '@mui/icons-material/MailSharp';
