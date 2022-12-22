@@ -7,6 +7,7 @@ import Watch from "./pages/Watch";
 import Registro from "./pages/Registro";
 import Login from "./pages/Login";
 import Landing from "./pages/Landing";
+import Favoritos from "./pages/Favoritos";
 
 
 
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/login" exact element={<Login />}></Route>
           <Route path="/home" exact element={<Home />}></Route>
           <Route path="/watch" exact element={<Watch />}></Route>
+          <Route path="/Favorites" exact element={<Favoritos />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

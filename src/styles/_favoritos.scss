@@ -1,0 +1,154 @@
+.container{
+    background: inherit;
+}
+
+.galeria-misFavoritos{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 25rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); //auto-fill
+}
+
+.tituloGeneral-misFavoritos{
+    color: #fff;
+    padding-left: 2rem;
+    margin-top: -5rem;
+}
+
+.container-botonEditar-misFavoritos{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botonEditar-misFavoritos{
+    color: #ffffff;
+    border-color: #ffffff;
+    font-size: 1.2rem;
+    padding: .4rem 1rem;
+    border-width: 0.1rem;
+    background-color: inherit;
+}
+
+.botonEditar-misFavoritos:hover{
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #000000;
+  }
+
+.tarjeta-misFavoritos{
+    background: none;
+    margin: 2rem 0rem 0rem 2rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: rgba(0, 0, 0, 0.815);
+    border-radius: 0.2rem;
+    box-shadow: #000000;
+    width: 15rem;
+    height: 15rem;
+}
+
+.imagen-galeria-misFavoritos{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 0.2rem;
+}
+
+.titulo-galeria-misFavoritos{
+    text-align: center;
+    color: #fff;
+    margin-top: 0.5rem;
+}
+
+.descripcion-galeria-misFavoritos{
+    text-align: center;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+// /* Esto es un comentario en CSS*/
+
+// body{
+//     margin-top: 10rem;
+//     background-color: rgba(0, 0, 0, 0.89);
+//     display: grid;
+// }
+
+
+// .container{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .box{
+//     text-align: center;
+//     width: 200px;
+//     height: 300px;
+//     font-size: 20px;
+//     color: rgb(0, 0, 0);
+//     margin: 20px 7px 50px;
+    
+// }
+
+// .red{
+// background-color: #e02d0e;
+// }
+
+// .black{
+//     background-color: #020202;
+//     }
+    
+// .blue{
+//     background-color: #0e2de0;
+//     }    
+
+// .green{
+//     background-color: #0ee018ef;
+//     }
+        
+// .gold{
+//     background-color: #F5BC52;
+//     }
+ 
+// article{
+//     color: #ffffff;
+//     display: grid;
+//     justify-content: center;
+//     margin: 20px 7px 50px;
+// }    
+
+// /* Mejorar esto */
+
+// #editarFavBoton{
+//     color: #ffffff;
+//     display: flex;
+//     justify-content: right;
+//     margin-bottom: 2rem;
+// }  
+
+// .container2{
+//     display: grid;
+//     gap: 1px;
+//     grid-template-columns:6rem 6rem 6rem;
+//     grid-template-rows:6rem 6rem 6rem;
+//     justify-content: center;
+//     animation-name: cubo;
+//     animation-duration: 4s;
+//     animation-timing-function: ease-in-out;
+// }
+
+// .grid{
+//     padding: 20px;
+//     font-size: 20px;
+//     color: rgb(0, 0, 0);
+//     font-weight: 1rem;
+// }
