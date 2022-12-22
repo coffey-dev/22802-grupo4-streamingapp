@@ -21,7 +21,7 @@ body{
 
 .form-control{
 min-width: 15rem;
-color: #ffffff;
+color: #000000;
 }
 
 .form-control:active{
@@ -113,4 +113,16 @@ color: #ffffff;
   color: rgba(241, 27, 74, 0.849);
   font-size: 0.8rem;
   padding-top: 0.5rem;
+}
+
+
+/* Iconos y alineación */
+
+.register-icon{
+  display: flex;
+  align-items: center;
+}
+
+.form-label{
+  margin-bottom: 0.5rem;
 }
