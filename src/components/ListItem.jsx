@@ -54,18 +54,5 @@ export default function ListItem({ index }) {
 
 
 
-{/*
-<ReactPlayer
-          className='react-player'
-          url={trailer}
-          playing={true}
-         loop={true}
-         muted={true}
-
-        />
-*/}
-
-
-
 
 
