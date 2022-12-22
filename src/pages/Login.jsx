@@ -1,14 +1,17 @@
 import React from 'react';
-import Log from '../components/log/Log';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+import Log from '../components/Log';
 
 
 
 const Login = () => {
   return (
     <div className='login'>
-      
-     <Log />
-        </div>
+      <Header/>
+      <Log />
+      <Footer/>
+    </div>
   )
 }
 

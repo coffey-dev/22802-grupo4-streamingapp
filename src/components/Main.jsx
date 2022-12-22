@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import background from "../images/main/back_lp.png";
 import fotoUno from "../images/main/foto_1.jpg";
 import fotoDos from "../images/main/foto_2.jpg";
+import { useNavigate } from "react-router-dom";
 
 function Main() {
 
@@ -19,7 +20,7 @@ function Main() {
 
           <div className="main_inputgroup">
             <input type="text" className="main_formcontrol" placeholder="Tu email" aria-label="Tu email" aria-describedby="button-addon2" />
-            <button className="btn" type="button" id="button-addon2" onClick={()=>navigate("/register")}>Ingresar</button>
+            <button className="main_btn" type="button" id="button-addon2" onClick={()=>navigate("/register")}>Ingresar</button>
           </div>
         </div>
       </div >
