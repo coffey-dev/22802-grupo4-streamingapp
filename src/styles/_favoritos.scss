@@ -1,10 +1,10 @@
-.container{
+.container-misFavoritos{
     background: inherit;
 }
 
 .galeria-misFavoritos{
     display: grid;
-    gap: 1rem;
+    gap: 4rem 1rem;
     grid-auto-rows: 25rem;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); //auto-fill
 }
@@ -65,90 +65,3 @@
     padding: 0.5rem;
 }
 
-
-
-
-
-
-
-
-
-
-// /* Esto es un comentario en CSS*/
-
-// body{
-//     margin-top: 10rem;
-//     background-color: rgba(0, 0, 0, 0.89);
-//     display: grid;
-// }
-
-
-// .container{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-
-// .box{
-//     text-align: center;
-//     width: 200px;
-//     height: 300px;
-//     font-size: 20px;
-//     color: rgb(0, 0, 0);
-//     margin: 20px 7px 50px;
-    
-// }
-
-// .red{
-// background-color: #e02d0e;
-// }
-
-// .black{
-//     background-color: #020202;
-//     }
-    
-// .blue{
-//     background-color: #0e2de0;
-//     }    
-
-// .green{
-//     background-color: #0ee018ef;
-//     }
-        
-// .gold{
-//     background-color: #F5BC52;
-//     }
- 
-// article{
-//     color: #ffffff;
-//     display: grid;
-//     justify-content: center;
-//     margin: 20px 7px 50px;
-// }    
-
-// /* Mejorar esto */
-
-// #editarFavBoton{
-//     color: #ffffff;
-//     display: flex;
-//     justify-content: right;
-//     margin-bottom: 2rem;
-// }  
-
-// .container2{
-//     display: grid;
-//     gap: 1px;
-//     grid-template-columns:6rem 6rem 6rem;
-//     grid-template-rows:6rem 6rem 6rem;
-//     justify-content: center;
-//     animation-name: cubo;
-//     animation-duration: 4s;
-//     animation-timing-function: ease-in-out;
-// }
-
-// .grid{
-//     padding: 20px;
-//     font-size: 20px;
-//     color: rgb(0, 0, 0);
-//     font-weight: 1rem;
-// }

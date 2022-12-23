@@ -1,4 +1,3 @@
-// Imports de Sebas
 import React from 'react';
 import { useState } from "react";
 import validation from "./validation"
@@ -149,5 +148,3 @@ export default function Register() {
     </div>
   )
 }
-
-// export default Register
