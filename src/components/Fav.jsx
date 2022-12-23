@@ -1,6 +1,9 @@
 import React from 'react';
-import "../styles/_favoritos.scss";
+
+
+
 // import logo from "../images/header/logo.png";
+
 
 
 
