@@ -15,7 +15,7 @@ Swal.fire({
       popup: 'animate__animated animate__fadeOutUp'
     },
     showConfirmButton: false,
-    timer: 2000
+    timer: 3000
   })
 
 }

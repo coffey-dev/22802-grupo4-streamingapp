@@ -47,20 +47,17 @@ export default function Register() {
     console.log(response);
 
     if (response.uiMessage){
-    <PopupUsuarioCreado />
-
+      PopupUsuarioCreado();
       // console.log('Crea la cuenta');
     }
     
     else if (response.email){
-    <PopupEmailRepetido />
-
+      PopupEmailRepetido();
     //  console.log('Existe otra cuenta con ese email');
     }
     
     else{
-    <PopupErrorConexion />
-      
+      PopupErrorConexion();
     //  console.log('Error de conexion');
     }
   }
