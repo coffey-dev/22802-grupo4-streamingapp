@@ -10,7 +10,6 @@ import Landing from "./pages/Landing";
 import Favoritos from "./pages/Favoritos";
 
 
-
 const App = () => {
   return(
     <div>
