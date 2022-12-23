@@ -6,6 +6,9 @@ import PersonSharpIcon from '@mui/icons-material/PersonSharp';
 import MailSharpIcon from '@mui/icons-material/MailSharp';
 import HttpsSharpIcon from '@mui/icons-material/HttpsSharp';
 import { useNavigate } from "react-router-dom";
+import PopupUsuarioCreado from '../PopupUsuarioCreado';
+import PopupEmailRepetido from '../PopupEmailRepetido';
+import PopupErrorConexion from '../PopupErrorConexion';
 
 export default function Register() {
 
@@ -44,11 +47,21 @@ export default function Register() {
     console.log(response);
 
     if (response.uiMessage){
-      console.log('Crea la cuenta');
-    }else if (response.email){
-      console.log('Existe otra cuenta con ese email');
-    }else{
-      console.log('Error de conexion');
+    <PopupUsuarioCreado />
+
+      // console.log('Crea la cuenta');
+    }
+    
+    else if (response.email){
+    <PopupEmailRepetido />
+
+    //  console.log('Existe otra cuenta con ese email');
+    }
+    
+    else{
+    <PopupErrorConexion />
+      
+    //  console.log('Error de conexion');
     }
   }
 

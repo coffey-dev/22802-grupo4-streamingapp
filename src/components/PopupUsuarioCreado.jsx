@@ -1,6 +1,6 @@
 import Swal from 'sweetalert2';
 
- const Popup =()=>{
+ const PopupUsuarioCreado =()=>{
 
     
 Swal.fire({
@@ -20,4 +20,4 @@ Swal.fire({
 
 }
 
-export default Popup
+export default PopupUsuarioCreado;
