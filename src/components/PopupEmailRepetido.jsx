@@ -1,5 +1,6 @@
 import Swal from 'sweetalert2';
 
+
  const PopupEmailRepetido =()=>{
 
     
@@ -14,7 +15,10 @@ Swal.fire({
     hideClass: {
       popup: 'animate__animated animate__fadeOutUp'
     },
-    showConfirmButton: true
+    showConfirmButton: true,
+    customClass:{
+      confirmButton:'swalBtnConfirm'
+    }
   })
 
 }

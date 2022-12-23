@@ -15,6 +15,9 @@ Swal.fire({
       popup: 'animate__animated animate__fadeOutUp'
     },
     showConfirmButton: true,
+    customClass:{
+      confirmButton:'swalBtnConfirm'
+    }
   })
 
 }
