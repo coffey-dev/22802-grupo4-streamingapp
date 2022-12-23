@@ -72,7 +72,7 @@ function Peliculas() {
 
   return (
     <div>
-      <h2 className='text-center mt-5 mb-5'>Lista de películas</h2>
+      {/* <h2 className='text-center mt-5 mb-5'>Lista de películas</h2> */}
       {/* buscador de peliculas */}
       <form  className='container mb-4' onSubmit={buscarPelicula}>
         <div class="input-group">
@@ -146,9 +146,9 @@ function Peliculas() {
       <div className='container mt-3'>
         <div className='row'>
           {movies.map((movie) => (
-            <div key={movie.id} className='col-md-4 mb-3' onClick={()=> seleccionarPelicula(movie)}>
-              <img src={`${URL_IMAGE + movie.poster_path}`} alt="" height={600} width="100%" />
-              <h4 className='text-center'>{movie.title}</h4>
+            <div key={movie.id} className='col-md-3 mb-3' onClick={()=> seleccionarPelicula(movie)}>
+              <img src={`${URL_IMAGE + movie.poster_path}`} alt="" height={350} width="auto" />
+              {/* <h4 className='text-center'>{movie.title}</h4> */}
             </div>
           ))}
 
