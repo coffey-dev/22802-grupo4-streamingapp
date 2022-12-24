@@ -36,9 +36,7 @@ if(direction === "right" && slideNumber < 5){
   setSlideNumber(slideNumber + 1);
   listRef.current.style.transform = `translateX(${-230 + distance}px)`
   }
-
 }
-
 
   return (
     <div className='list_list'>
@@ -63,9 +61,7 @@ style={{display: !isMoved && "none"} }
     <ListItem index={7}  />
     <ListItem index={8}  />
     <ListItem index={9}  />
-   
-   
-    </div>
+</div>
 
 <ArrowForwardIosOutlinedIcon className='sliderArrow right' onClick={()=>handleClick("right")} />
         </div>
