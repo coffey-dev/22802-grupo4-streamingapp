@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import '../assets/stylessheets/Peliculas.css';
 import axios from 'axios';
 import YouTube from 'react-youtube';
@@ -52,6 +52,7 @@ function Peliculas() {
       setTrailer(trailer ? trailer : data.videos.results[0])
     }
     setMovie(data)
+    console.log(data)
   }
 
   const seleccionarPelicula = async(movie) => {
@@ -66,17 +67,17 @@ function Peliculas() {
     traerPeliculas(searchKey);
   }
 
-  useEffect(() => {
-    traerPeliculas();
-  }, []);
+  // useEffect(() => {
+  //   traerPeliculas();
+  // }, []);
 
   return (
     <div>
       {/* <h2 className='text-center mt-5 mb-5'>Lista de películas</h2> */}
       {/* buscador de peliculas */}
       <form  className='container mb-4' onSubmit={buscarPelicula}>
-        <div class="input-group">
-          <span class="input-group-text">Búsqueda</span>
+        <div className="input-group">
+          <span className="input-group-text">Búsqueda</span>
           <input className='text form-control' type="text" aria-label="First name" placeholder='buscar...' onChange={(e) =>
           setSearchKey(e.target.value)} />
           <button className='btn btn-primary ms-3'>Buscar</button>
@@ -96,7 +97,7 @@ function Peliculas() {
                 <>
                   <YouTube
                     videoId={trailer.key}
-                    classname="reproductor container"
+                    className="reproductor container"
                     containerClassName={"youtube-container amru"}
                     opts={{
                       width: "100%",
