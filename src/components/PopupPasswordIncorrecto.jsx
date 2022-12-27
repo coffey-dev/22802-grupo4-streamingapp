@@ -1,11 +1,11 @@
 import Swal from 'sweetalert2';
 
 
- const PopupEmailRepetido =()=>{
+ const PopupPasswordIncorrecto =()=>{
 
     
 Swal.fire({
-    title: 'Existe otra cuenta con el mismo email',
+    title: 'Contraseña incorrecta',
     icon:'error',
     color:'white',
     background:'black',
@@ -23,4 +23,4 @@ Swal.fire({
 
 }
 
-export default PopupEmailRepetido;
+export default PopupPasswordIncorrecto;
