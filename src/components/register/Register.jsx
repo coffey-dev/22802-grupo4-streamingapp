@@ -39,16 +39,20 @@ export default function Register() {
   };
 
   const checkEmail = async (email) => {
-    // https://22802-grupo4-streamingapp-backend.jimmygonzalez5.repl.co/api/user/j@gmail.com
+
+    //Send HTTP request
     const response = await fetch("https://22802-grupo4-streamingapp-backend.jimmygonzalez5.repl.co/api/user/"+email)
       .then(res => res.json())
       .then(res => res);
 
-    console.log(response);
-
+    //Check if email is available
     if (response.uiMessage){
+      
+      createUser();
       PopupUsuarioCreado();
-      // console.log('Crea la cuenta');
+      setTimeout(()=>{
+        navigate("/home");
+      },3000);
     }
     
     else if (response.email){
@@ -60,6 +64,27 @@ export default function Register() {
       PopupErrorConexion();
     //  console.log('Error de conexion');
     }
+  }
+
+  const createUser = async () => {
+
+    const user = {
+      name: values.nombre,
+      lastname: values.apellido,
+      email: values.email,
+      password: values.pass
+    }
+
+    fetch('https://22802-grupo4-streamingapp-backend.jimmygonzalez5.repl.co/api/create',{
+      method: 'POST',
+      headers: {
+        'Accept':'application/json',
+        'Content-Type':'application/json'
+      },
+      body: JSON.stringify(user)
+    })
+    .then(res => res.json())
+    .then(res => console.log(JSON.stringify(res)));
   }
 
   //Comento el código anterior (Emi)
