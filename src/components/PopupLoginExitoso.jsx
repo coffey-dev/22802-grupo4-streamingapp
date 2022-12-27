@@ -1,12 +1,11 @@
 import Swal from 'sweetalert2';
 
-
- const PopupEmailRepetido =()=>{
+ const PopupLoginExitoso =()=>{
 
     
 Swal.fire({
-    title: 'Existe otra cuenta con el mismo email',
-    icon:'error',
+    title: 'Bienvenido',
+    icon:'success',
     color:'white',
     background:'black',
     showClass: {
@@ -15,12 +14,10 @@ Swal.fire({
     hideClass: {
       popup: 'animate__animated animate__fadeOutUp'
     },
-    showConfirmButton: true,
-    customClass:{
-      confirmButton:'swalBtnConfirm'
-    }
+    showConfirmButton: false,
+    timer: 3000
   })
 
 }
 
-export default PopupEmailRepetido;
+export default PopupLoginExitoso;

@@ -1,11 +1,11 @@
 import Swal from 'sweetalert2';
 
 
- const PopupEmailRepetido =()=>{
+ const PopupEmailNuevo =()=>{
 
     
 Swal.fire({
-    title: 'Existe otra cuenta con el mismo email',
+    title: 'El correo ingresado no esta asociado a ninguna cuenta',
     icon:'error',
     color:'white',
     background:'black',
@@ -23,4 +23,4 @@ Swal.fire({
 
 }
 
-export default PopupEmailRepetido;
+export default PopupEmailNuevo;
