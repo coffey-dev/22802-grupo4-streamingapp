@@ -4,10 +4,16 @@ import "../styles/_log.scss";
 import MailSharpIcon from '@mui/icons-material/MailSharp';
 import HttpsSharpIcon from '@mui/icons-material/HttpsSharp';
 import validation from "./register/validation.js"
-
+import PopupEmailNuevo from "./PopupEmailNuevo";
+import PopupErrorConexion from "./PopupErrorConexion";
+import PopupLoginExitoso from "./PopupLoginExitoso";
+import {useNavigate} from "react-router-dom";
+import PopupPasswordIncorrecto from "./PopupPasswordIncorrecto";
 
 
 function Log() {
+
+  const navigate = useNavigate();
 
   const [values, setValues] = useState({
     email: "",
@@ -24,10 +30,45 @@ function Log() {
   };
 
   const handleFormSubmit = (event) => {
-    event.preventDefault(); 
+    event.preventDefault();
+    checkEmail(values.email);
     setErrors(validation(values));
   };
   
+  const checkEmail = async (email) => {
+
+    //Send HTTP request
+    const response = await fetch("https://22802-grupo4-streamingapp-backend.jimmygonzalez5.repl.co/api/user/"+email)
+      .then(res => res.json())
+      .then(res => res);
+
+    if (response.email){
+      // console.log("Verifica contraseña");
+
+      //Check pass
+      if(values.pass === response.password){
+        // console.log("Bienvenido");
+        PopupLoginExitoso();
+        setTimeout(()=>{
+          navigate("/home");
+        },3000);
+
+      }
+      else{
+        console.log("Contraseña incorrecta");
+        PopupPasswordIncorrecto();
+      }
+    }
+    else if(response.uiMessage){
+      // console.log("El correo ingresado no esta asociado a ninguna cuenta");
+      PopupEmailNuevo();
+    }
+    else{
+      // console.log("Error de conexion");
+      PopupErrorConexion();
+    }
+  }
+
   return (
     <div className="container w-25">
       <div className="row text-white">
