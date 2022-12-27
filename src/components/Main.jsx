@@ -1,9 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import background from "../images/main/back_lp.png";
-import fotoUno from "../images/main/foto_1.jpg";
-import fotoDos from "../images/main/foto_2.jpg";
+import background from "../images/main/landing1.png";
+import fotoUno from "../images/main/foto_1.png";
+import fotoDos from "../images/main/foto_2.png";
 
 function Main() {
 
