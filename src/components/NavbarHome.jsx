@@ -21,22 +21,21 @@ window.onscroll = () =>{
 
 
   return (
-    <div className={isScrolled ? "navbar scrolled" : "navbar" }>
+    <div className={isScrolled ? "navbar_navbar scrolled" : "navbar_navbar" }>
       
       <div className='navbar_container'>
         
         <div className='left'>
           <img src={logo} alt="" />
-          <span>Homepage</span>
+          <span>Home</span>
           <span>Series</span>
-          <span>Movies</span>
-          <span>New and Popular</span>
-          <span>My list</span>
+          <span>Películas</span>
+          <span>Nuevas y Populares</span>
+          <span>Mi lista</span>
         </div>
 
         <div className='right'>
           < SearchIcon className='icon' />
-          <span>KIDS</span>
           <NotificationsIcon className='icon' />
           <img src='https://pbs.twimg.com/profile_images/794107415876747264/g5fWe6Oh_400x400.jpg' alt="" />
           <div className='profile'>
