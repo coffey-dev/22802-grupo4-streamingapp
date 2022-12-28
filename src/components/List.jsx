@@ -40,7 +40,7 @@ if(direction === "right" && slideNumber < 5){
 
   return (
     <div className='list_list'>
-        <span className='listTitle'>Continue to watch</span>
+        <span className='listTitle'>Seguir viendo</span>
         <div className='wrapper'>
 <ArrowBackIosOutlinedIcon 
 className='sliderArrow left' 

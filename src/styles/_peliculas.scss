@@ -26,4 +26,9 @@
     gap: 1rem;
     grid-auto-rows: 25rem;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    place-content: center;
+}
+
+.descripcion{
+    background: #0202025b;
 }

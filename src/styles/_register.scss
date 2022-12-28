@@ -1,5 +1,5 @@
 body{
-  background-color: rgba(0, 0, 0, 0.90);  
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 #logo{
@@ -16,8 +16,21 @@ body{
   margin-top: 11rem;
   margin-bottom: 13rem;
   min-width:fit-content;
-  background-color: #0202025b;
+  // background-color: #0202025b;
 }
+
+.containerRegistro{
+  padding: 4rem 3rem;
+  border-radius: 0.5rem;
+  margin-top: 13rem;
+  margin-bottom: 13rem;
+  min-width:fit-content;
+  background-color: #0202027a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .form-control{
 min-width: 15rem;

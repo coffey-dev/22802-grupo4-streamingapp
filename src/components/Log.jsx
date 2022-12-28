@@ -70,7 +70,7 @@ function Log() {
   }
 
   return (
-    <div className="container w-25">
+    <div className="container containerLogeo w-25">
       <div className="row text-white">
         <div className="col"></div>
         <h2 className="mb-3">Inicia sesión</h2>

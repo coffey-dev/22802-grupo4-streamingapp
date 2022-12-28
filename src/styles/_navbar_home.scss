@@ -9,7 +9,7 @@ $barra:#0202025b;
     position: fixed;
     top: 0;
     z-index: 999;
-    background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+    background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.7) 50%);
     transition: all .2s;
   
     &.scrolled{
@@ -29,8 +29,9 @@ $barra:#0202025b;
         align-items: center;
   
         img {
-          height: 25px;
-          margin-right: 40px;
+          width: auto;
+          height: 4em;
+          padding-right: 45px;
         }
   
         span {

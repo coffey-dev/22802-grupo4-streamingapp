@@ -27,7 +27,7 @@ window.onscroll = () =>{
         
         <div className='left'>
           <img src={logo} alt="" />
-          <span>Home</span>
+          <span>Inicio</span>
           <span>Series</span>
           <span>Películas</span>
           <span>Nuevas y Populares</span>
@@ -41,8 +41,8 @@ window.onscroll = () =>{
           <div className='profile'>
             <ArrowDropDownIcon className='icon' />
             <div className="options">
-              <span>Settings</span>
-              <span>Logout</span>
+              <span>Configuración</span>
+              <span>Salir</span>
             </div>
           </div>
         </div>

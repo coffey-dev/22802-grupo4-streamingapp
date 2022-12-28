@@ -8,11 +8,15 @@ $gradienteder: #410877;
 $fondo:rgba(0,0,0,0.90);
 $enlaces:#555555;
 $fuentes:'Roboto', sans-serif;
+
+
+
+body{
+    background-color: rgb(22, 22, 22);
+    font-family: 'Roboto', sans-serif;
+}
 /*
-    body{
-        background-color: var(--fondo);
-        font-family: 'Roboto', sans-serif;
-    }
+
     
     .btn{
         text-transform: uppercase;
