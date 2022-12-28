@@ -40,15 +40,15 @@ if(direction === "right" && slideNumber < 5){
 
   return (
     <div className='list_list'>
-        <span className='listTitle'>Continue to watch</span>
+        <span className='listTitle'>Seguir viendo</span>
         <div className='wrapper'>
-<ArrowBackIosOutlinedIcon 
-className='sliderArrow left' 
-onClick={()=>handleClick("left")}
+          <ArrowBackIosOutlinedIcon 
+          className='sliderArrow left' 
+          onClick={()=>handleClick("left")}
 
 // Cuando el valor de IsMoved es falso, el botón pasa a ser "none" y no se muestra //
-style={{display: !isMoved && "none"} }
-/>
+        style={{display: !isMoved && "none"} }
+        />
 
 <div className='containerlist' ref={listRef}>
     <ListItem index={0}  />

@@ -67,40 +67,49 @@ export default function ListItem({ index }) {
     }, []);
 
   return (
-    <div
-      className="listItem"
-      style={{ left: isHovered && index * 225 - 50 + index * 2.5 }}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <img
-        src={`${URL_IMAGE + movie.poster_path}`}
-        alt=""
-      />
-      {isHovered && (
-        <>
-          <video src={trailer} autoPlay={true} loop />
-          <div className="itemInfo">
-            <div className="iconoslistitem">
-              <PlayArrowIcon className="icono" />
-              <AddIcon className="icono" />
-              <ThumbUpOutlinedIcon className="icono" />
-              <ThumbDownOffAltOutlinedIcon className="icono" />
-            </div>
-            <div className="itemInfoTop">
-              <span>{movies[0].runtime}</span>
-              <span className="limit">{movies[0].adult}</span>
-              <span>{movies[0].release_date}</span>
-              {/* <span>{movies[0].production_countries[0].release_date}</span> */}
-            </div>
-            <div className="desc">
-              {movies[0].overview}
-            </div>
-            {/* <div className="genre">{movies[0].genres[0].name}</div> */}
-            <div className="genre">{movies[0].genre_ids[0]}</div>
+    <div className='container mt-3'>
+      <div className='row'>
+        {movies.map((movie) => (
+          <div key={movie.id} className='col mb-2'>
+            <img src={`${URL_IMAGE + movie.poster_path}`} alt="" height={350} width="auto" />
           </div>
-        </>
-      )}
-    </div>
+        ))}
+      </div>
+  </div>
   );
 }
+
+
+    //   <div
+    //   className="listItem"
+    //   style={{ left: isHovered && index * 225 - 50 + index * 2.5 }}
+    //   onMouseEnter={() => setIsHovered(true)}
+    //   onMouseLeave={() => setIsHovered(false)}
+    //   >
+    //   <img
+    //     src={`${URL_IMAGE + pelicula.poster_path}`}
+    //     alt=""
+    //   />
+    //   {isHovered && (
+    //     <>
+    //       <video src={trailer} autoPlay={true} loop />
+    //       <div className="itemInfo">
+    //         <div className="iconoslistitem">
+    //           <PlayArrowIcon className="icono" />
+    //           <AddIcon className="icono" />
+    //           <ThumbUpOutlinedIcon className="icono" />
+    //           <ThumbDownOffAltOutlinedIcon className="icono" />
+    //         </div>
+    //         <div className="itemInfoTop">
+    //           <span>{movies[0].runtime}</span>
+    //           <span className="limit">{movies[0].adult}</span>
+    //           <span>{movies[0].release_date}</span>
+    //         </div>
+    //         <div className="desc">
+    //           {movies[0].overview}
+    //         </div>
+    //         <div className="genre">{movies[0].genre_ids[0]}</div>
+    //       </div>
+    //     </>
+    //   )}
+    // </div>

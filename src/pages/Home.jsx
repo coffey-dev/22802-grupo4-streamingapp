@@ -18,11 +18,8 @@ const Home = () => {
        <List />
        <List />
        <List />
-       <Peliculas />
        <Footer />
-       
-
-        </div>
+    </div>
   )
 }
 
