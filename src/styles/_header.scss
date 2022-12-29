@@ -17,7 +17,7 @@ $fuentes:'Roboto', sans-serif;
     left: 0;
     top: 0;
     z-index: 999;
-    background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.747) 50%);
+    background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.747) 40%);
     transition: all .2s;
 // ver error en el cambio de estado de la barra scrolleada
     &.scrolled{
@@ -37,6 +37,7 @@ $fuentes:'Roboto', sans-serif;
                 width: auto;
                 height: 4em;
                 padding-right: 45px;
+                margin-top: -1em;
               }
         }
         .encabezado_der {

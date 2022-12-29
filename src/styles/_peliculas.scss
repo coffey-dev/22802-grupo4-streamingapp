@@ -1,0 +1,34 @@
+.verTrailer{
+    min-height: 700px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .boton{
+    background-color: #0f1014;
+    color: white;
+    outline: none;
+    border: 1px solid white;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .reproductor{
+    width: 100%;
+    height: 600px;
+  }
+
+  .buscarPeliculas{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 25rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    place-content: center;
+}
+
+.descripcion{
+    background: #0202025b;
+}

@@ -40,14 +40,14 @@ export default function Featured({type}) {
         <div className='button'>
         <button className="play">
             <PlayArrowIcon />
-            <span className="Play">Play</span>
+            <span className="Play">Reproducir</span>
 
 
         </button>
         
         <button className="more">
             <InfoOutlinedIcon />
-            <span>Info</span>
+            <span>Más info</span>
         
         </button>
         </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../assets/stylessheets/Peliculas.css';
+// import '../assets/stylessheets/Peliculas.css';
 import axios from 'axios';
 import YouTube from 'react-youtube';
 
@@ -119,7 +119,7 @@ function Peliculas() {
                     </button>
                 </>
               ) : (
-                <div className='container'>
+                <div className='container descripcion'>
                   <div className=''>
                     {trailer ? (
                       <button 
@@ -145,10 +145,10 @@ function Peliculas() {
 
       {/* contenedor que va a mostrar las peliculas actuales */}
       <div className='container mt-3'>
-        <div className='row'>
+        <div className='buscarPeliculas'>
           {movies.map((movie) => (
             <div key={movie.id} className='col-md-3 mb-3' onClick={()=> seleccionarPelicula(movie)}>
-              <img src={`${URL_IMAGE + movie.poster_path}`} alt="" height={350} width="auto" />
+              <img src={`${URL_IMAGE + movie.poster_path}`} alt="" height={350} width={240} />
               {/* <h4 className='text-center'>{movie.title}</h4> */}
             </div>
           ))}

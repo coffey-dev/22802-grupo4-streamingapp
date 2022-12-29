@@ -1,6 +1,7 @@
 // Imports de Sebas
 import React from 'react';
 import { useState } from "react";
+import "../../styles/_register.scss";
 import validation from "./validation"
 import PersonSharpIcon from '@mui/icons-material/PersonSharp';
 import MailSharpIcon from '@mui/icons-material/MailSharp';
@@ -102,7 +103,7 @@ export default function Register() {
   // };
   return (
 
-    <div className="container w-25">
+    <div className="container containerRegistro w-25">
       <div className="row text-white">
         <div className="col"></div>
         <h2 className="mb-4">Crea tu cuenta</h2>

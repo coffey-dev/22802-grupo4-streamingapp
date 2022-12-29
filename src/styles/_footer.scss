@@ -18,6 +18,15 @@ footer {
         border-bottom: .5 solid $fondo;
         padding-bottom: 1em;
         width: 100%;
+        @media only screen and (max-width: 600px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: {
+                left: auto;
+                right: auto;
+            };
+          }
         .footer_item{
             list-style: none;
         .nombre_link{

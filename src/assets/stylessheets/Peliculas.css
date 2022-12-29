@@ -20,3 +20,10 @@
     width: 100%;
     height: 600px;
   }
+
+  .buscarPeliculas{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 25rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
