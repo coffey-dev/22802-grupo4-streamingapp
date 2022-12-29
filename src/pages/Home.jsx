@@ -3,6 +3,7 @@ import NavbarHome from '../components/NavbarHome';
 import Featured from '../components/Featured';
 import List from '../components/List';
 import Footer from '../components/Footer';
+import Peliculas from '../components/Peliculas';
 
 
 
@@ -16,6 +17,7 @@ const Home = () => {
        <List id="35" />
        <List id="18"/>
        <List id="10749"/>
+       <Peliculas />
        <Footer />
     </div>
   )
