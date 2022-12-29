@@ -7,7 +7,7 @@ import axios from 'axios';
 
 
 
-export default function ListItem({ index }) {
+export default function ListItem2({ index }) {
   
   const API_URL = 'https://api.themoviedb.org/3';
   const API_KEY = '5781dc68edd336a415b02ad15023cdf1';
@@ -67,27 +67,31 @@ export default function ListItem({ index }) {
     }, []);
 
   return (
+
     <div className='container mt-3'>
-      <div className='row'>
-        {movies.map((movie) => (
-          <div key={movie.id} className='col mb-2'>
-            <img src={`${URL_IMAGE + movie.poster_path}`} alt="" height={350} width="auto" />
-          </div>
-        ))}
+        <div className='row'>
+          {movies.map((movie) => (
+            <div key={movie.id} className='col mb-3'>
+              <img src={`${URL_IMAGE + movie.poster_path}`} alt="" height={350} width="auto" />
+              {/* <h4 className='text-center'>{movie.title}</h4> */}
+            </div>
+          ))}
+
+        </div>
       </div>
-  </div>
+    
   );
 }
 
 
-    //   <div
+    // <div
     //   className="listItem"
     //   style={{ left: isHovered && index * 225 - 50 + index * 2.5 }}
     //   onMouseEnter={() => setIsHovered(true)}
     //   onMouseLeave={() => setIsHovered(false)}
-    //   >
+    // >
     //   <img
-    //     src={`${URL_IMAGE + pelicula.poster_path}`}
+    //     src={`${URL_IMAGE + movies[1].poster_path}`}
     //     alt=""
     //   />
     //   {isHovered && (
@@ -101,14 +105,16 @@ export default function ListItem({ index }) {
     //           <ThumbDownOffAltOutlinedIcon className="icono" />
     //         </div>
     //         <div className="itemInfoTop">
-    //           <span>{movies[0].runtime}</span>
-    //           <span className="limit">{movies[0].adult}</span>
-    //           <span>{movies[0].release_date}</span>
+    //           <span>{movies[1].runtime}</span>
+    //           <span className="limit">{movies[1].adult}</span>
+    //           <span>{movies[1].release_date}</span>
+    //           {/* <span>{movies[0].production_countries[0].release_date}</span> */}
     //         </div>
     //         <div className="desc">
-    //           {movies[0].overview}
+    //           {movies[1].overview}
     //         </div>
-    //         <div className="genre">{movies[0].genre_ids[0]}</div>
+    //         {/* <div className="genre">{movies[0].genres[0].name}</div> */}
+    //         <div className="genre">{movies[1].genre_ids[0]}</div>
     //       </div>
     //     </>
     //   )}

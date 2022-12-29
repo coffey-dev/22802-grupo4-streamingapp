@@ -7,7 +7,7 @@ import axios from 'axios';
 
 
 
-export default function ListItem({ index }) {
+export default function ListItem( props) {
   
   const API_URL = 'https://api.themoviedb.org/3';
   const API_KEY = '5781dc68edd336a415b02ad15023cdf1';
@@ -69,12 +69,12 @@ export default function ListItem({ index }) {
   return (
     <div
       className="listItem"
-      style={{ left: isHovered && index * 225 - 50 + index * 2.5 }}
+      style={{ left: isHovered && props.index * 225 - 50 + props.index * 2.5 }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <img
-        src={`${URL_IMAGE + movie.poster_path}`}
+        src={`${props.url}`}
         alt=""
       />
       {isHovered && (
@@ -88,16 +88,12 @@ export default function ListItem({ index }) {
               <ThumbDownOffAltOutlinedIcon className="icono" />
             </div>
             <div className="itemInfoTop">
-              <span>{movies[0].runtime}</span>
-              <span className="limit">{movies[0].adult}</span>
-              <span>{movies[0].release_date}</span>
-              {/* <span>{movies[0].production_countries[0].release_date}</span> */}
+              <span>{props.titulo}</span>
+              <span className="limit">{props.estreno}</span>
             </div>
             <div className="desc">
-              {movies[0].overview}
+              {props.sinopsis}
             </div>
-            {/* <div className="genre">{movies[0].genres[0].name}</div> */}
-            <div className="genre">{movies[0].genre_ids[0]}</div>
           </div>
         </>
       )}
