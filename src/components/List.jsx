@@ -5,7 +5,7 @@ import ListItem from './ListItem';
 import { useState, useEffect } from "react";
 import axios from 'axios';
 
-export default function List() {
+export default function List({id}) {
 
   const [isMoved, setIsMoved] = useState(false);
 
@@ -47,55 +47,27 @@ export default function List() {
   // variables de estado
   const [movies, setMovies] = useState([]);
   //  const [searchKey, setSearchKey] = useState("");
-  const [trailer, setTrailer] = useState("https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0fd273d2c6d9a064f3ae35579b2bbdf&profile_id=139&oauth2_token_id=57447761");
-  const [movie, setMovie] = useState({ title: "Cargando Películas..." });
-  //  const [playing, setPlaying] = useState(false);
-
-  // Coloca cada uno de los items en un lugar correcto al posar el mouse sobre el item en cuestión // 
-  const [isHovered, setIsHovered] = useState(false);
-
-
-
-  // traer la info de un objeto y mostrar trailer en reproductor
-  const traerPelicula = async (id) => {
-    const { data } = await axios.get(`${API_URL}/movie/${id}`, {
-      params: {
-        api_key: API_KEY,
-        append_to_response: "video"
-      }
-    })
-    if (data.videos && data.videos.results) {
-      const trailer = data.videos.results.find(
-        (vid) => vid.name === "Official Trailer"
-      );
-      setTrailer(trailer ? trailer : data.videos.results[0])
-    }
-    setMovie(data)
-  }
 
   useEffect(() => {
     //funcion para realizar la petición por get a la api
     const traerPeliculas = async (searchKey) => {
       const type = searchKey ? "search" : "discover";
       const { data: { results }, } = await axios.get(`${API_URL}/${type}/movie`, {
-        params: {
+        params: { 
           api_key: API_KEY,
+          language: "es-ES",
+          sort_by: "popularity.desc",
+          with_genres: id,
           query: searchKey,
         }
       });
-      // results.forEach(movie => {
-      //   console.log(movie);
-      // });
-      setMovies(results);
-      setMovie(results[0]);
+      console.log(results);
 
-      if (results.length) {
-        await traerPelicula(results[0].id)
-      }
+      setMovies(results);
 
     }
     traerPeliculas();
-  }, []);
+  }, [id]);
 
   return (
     <div className='list_list'>
@@ -112,7 +84,6 @@ export default function List() {
         <div className='containerlist' ref={listRef}>
           {
             movies.map((pelicula, index) => {
-              console.log(pelicula);
               return (
                 <ListItem 
                   index={index}
@@ -124,17 +95,8 @@ export default function List() {
                 // <input onChange={(e) => updateCaption(e, index)} key={index} />
               )
             })
+            
           }
-          {/* <ListItem index={0}  />
-    <ListItem index={1}  />
-    <ListItem index={2}  />
-    <ListItem index={3}  />
-    <ListItem index={4}  />
-    <ListItem index={5}  />
-    <ListItem index={6}  />
-    <ListItem index={7}  />
-    <ListItem index={8}  />
-    <ListItem index={9}  /> */}
         </div>
 
         <ArrowForwardIosOutlinedIcon className='sliderArrow right' onClick={() => handleClick("right")} />
