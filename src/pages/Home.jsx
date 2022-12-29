@@ -7,22 +7,19 @@ import Peliculas from '../components/Peliculas';
 
 
 
-
 const Home = () => {
   return (
     <div className='home'>
       
         <NavbarHome />
        <Featured />
-       <List />
-       <List />
-       <List />
-       <List />
+       <List id="12"/>
+       <List id="35" />
+       <List id="18"/>
+       <List id="10749"/>
        <Peliculas />
        <Footer />
-       
-
-        </div>
+    </div>
   )
 }
 
