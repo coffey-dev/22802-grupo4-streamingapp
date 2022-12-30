@@ -13,6 +13,7 @@ const navigate = useNavigate();
 
 const[isScrolled, SetIsScrolled] = useState(false);
 
+
 // Cuando se scrollea la página, si el PageYOffset es 0 (o sea, está todo arriba, da como resultado "false")
 
 window.onscroll = () =>{
