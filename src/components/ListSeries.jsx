@@ -1,11 +1,12 @@
 import React, { useRef } from 'react';
 import ArrowBackIosOutlinedIcon from '@mui/icons-material/ArrowBackIosOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
-import ListItem from './ListItem';
+import ListItemSeries from './ListitemSeries';
 import { useState, useEffect } from "react";
 import axios from 'axios';
+import '../styles/_list.scss';
 
-export default function List({id}) {
+export default function ListSeries({page}) {
 
   const [isMoved, setIsMoved] = useState(false);
 
@@ -41,7 +42,6 @@ export default function List({id}) {
 
   const API_URL = 'https://api.themoviedb.org/3';
   const API_KEY = '5781dc68edd336a415b02ad15023cdf1';
-  // const IMAGE_PATH = 'https://image.tmdb.org/t/p/original';
   const URL_IMAGE = 'https://image.tmdb.org/t/p/original/';
 
   // variables de estado
@@ -51,21 +51,19 @@ export default function List({id}) {
   useEffect(() => {
     //funcion para realizar la petición por get a la api
     const traerPeliculas = async (searchKey) => {
-      const type = searchKey ? "search" : "discover";
-      const { data: { results }, } = await axios.get(`${API_URL}/${type}/movie`, {
+      const type = searchKey ? "search" : "tv";
+      const { data: { results }, } = await axios.get(`${API_URL}/${type}/popular`, {
         params: { 
           api_key: API_KEY,
           language: "es-ES",
-          sort_by: "popularity.desc",
-          with_genres: id,
+          page: page,
           query: searchKey,
         }
       });
       setMovies(results);
-
     }
     traerPeliculas();
-  }, [id]);
+  }, [page]);
 
   return (
     <div className='list_list'>
@@ -83,7 +81,7 @@ export default function List({id}) {
           {
             movies.map((pelicula, index) => {
               return (
-                <ListItem 
+                <ListItemSeries 
                   index={index}
                   url={URL_IMAGE+pelicula.poster_path}
                   titulo={pelicula.original_title}
@@ -96,7 +94,6 @@ export default function List({id}) {
             
           }
         </div>
-
         <ArrowForwardIosOutlinedIcon className='sliderArrow right' onClick={() => handleClick("right")} />
       </div>
     </div>
