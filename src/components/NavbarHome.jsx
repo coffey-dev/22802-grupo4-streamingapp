@@ -4,11 +4,14 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useState } from "react";
 import logo from "../images/header/logo.png";
+import { useNavigate } from 'react-router-dom';
+
 
 const NavbarHome = () => {
 
-  
-    const[isScrolled, SetIsScrolled] = useState(false);
+const navigate = useNavigate();
+
+const[isScrolled, SetIsScrolled] = useState(false);
 
 // Cuando se scrollea la página, si el PageYOffset es 0 (o sea, está todo arriba, da como resultado "false")
 
@@ -27,9 +30,9 @@ window.onscroll = () =>{
         
         <div className='left'>
           <img src={logo} alt="" />
-          <span>Inicio</span>
-          <span>Series</span>
-          <span>Películas</span>
+          <span onClick={() =>{navigate('/home')}}>Inicio</span>
+          <span onClick={() =>{navigate('/series')}}>Series</span>
+          <span onClick={() =>{navigate('/home')}}>Películas</span>
           <span>Nuevas y Populares</span>
           <span>Mi lista</span>
         </div>
@@ -42,7 +45,7 @@ window.onscroll = () =>{
             <ArrowDropDownIcon className='icon' />
             <div className="options">
               <span>Configuración</span>
-              <span>Salir</span>
+              <span onClick={() =>{navigate('/')}}>Salir</span>
             </div>
           </div>
         </div>
