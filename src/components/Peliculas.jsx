@@ -58,7 +58,7 @@ function Peliculas() {
   const seleccionarPelicula = async(movie) => {
     traerPelicula(movie.id)
     setMovie(movie)
-    window.scrollTo(0,0)
+    window.scrollTo(0,2700)
   }
 
   // funcion para buscar peliculas por nombre
@@ -120,7 +120,7 @@ function Peliculas() {
                 </>
               ) : (
                 <div className='container descripcion'>
-                  <div className=''>
+                  <div className='infoPelicula'>
                     {trailer ? (
                       <button 
                         className='boton'
@@ -134,7 +134,8 @@ function Peliculas() {
                       // "Lo siento, no se encuentra el trailer"
                     )}
                     <h1 className='text-white'>{movie.title}</h1>
-                    <p className='text-white'>{movie.overview}</p>
+                    <h4 className='text-white'>{movie.release_date}</h4>
+                    <h4 className='text-white'>{movie.overview}</h4>
                   </div>
                 </div>
               )}
