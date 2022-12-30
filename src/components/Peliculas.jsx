@@ -52,7 +52,6 @@ function Peliculas() {
       setTrailer(trailer ? trailer : data.videos.results[0])
     }
     setMovie(data)
-    console.log(data)
   }
 
   const seleccionarPelicula = async(movie) => {

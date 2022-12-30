@@ -60,7 +60,6 @@ export default function ListSeries({page}) {
           query: searchKey,
         }
       });
-      console.log(results);
       setMovies(results);
     }
     traerPeliculas();

@@ -61,8 +61,6 @@ export default function List({id}) {
           query: searchKey,
         }
       });
-      console.log(results);
-
       setMovies(results);
 
     }
